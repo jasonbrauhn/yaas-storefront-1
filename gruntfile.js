@@ -31,7 +31,7 @@ module.exports = function (grunt) {
         // Read npm argument and set the dynamic server environment or use default configuration.
         // Syntax example for npm 2.0 parameters: $ npm run-script singleProd -- --pid=xxx --cid=123 --ruri=http://example.com
         jasonslibrary = grunt.option('pid') || 'saphybriscaas',
-        CLIENT_ID = grunt.option('cid') || 'hkpWzlQnCIe4MSTi1Ud94Q7O36aRrRrO',
+        jasonslibrary.client = grunt.option('cid') || 'hkpWzlQnCIe4MSTi1Ud94Q7O36aRrRrO',
         REDIRECT_URI = grunt.option('ruri') || 'http://example.com',
         USE_HTTPS = grunt.option('https') || false,
         REGION_CODE = grunt.option('region') || '',
