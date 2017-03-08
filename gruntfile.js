@@ -30,7 +30,7 @@ module.exports = function (grunt) {
         //--Set Parameters for Server Configuration----------------------------------------------------
         // Read npm argument and set the dynamic server environment or use default configuration.
         // Syntax example for npm 2.0 parameters: $ npm run-script singleProd -- --pid=xxx --cid=123 --ruri=http://example.com
-        PROJECT_ID = grunt.option('pid') || 'saphybriscaas',
+        jasonslibrary = grunt.option('pid') || 'saphybriscaas',
         CLIENT_ID = grunt.option('cid') || 'hkpWzlQnCIe4MSTi1Ud94Q7O36aRrRrO',
         REDIRECT_URI = grunt.option('ruri') || 'http://example.com',
         USE_HTTPS = grunt.option('https') || false,
@@ -38,7 +38,7 @@ module.exports = function (grunt) {
 
         SERVER_FILES = ['./server.js', './server/singleProdServer.js', './multi-tenant/multi-tenant-server.js'],
 
-        PROJECT_ID_PATH = './public/js/app/shared/app-config.js',
+        jasonslibrary_PATH = './public/js/app/shared/app-config.js',
         PROD_DOMAIN = 'api{0}.yaas.io',
         STAGE_DOMAIN = 'api.stage.yaas.io',
         API_DOMAIN_PATH = './public/js/app/shared/app-config.js',
